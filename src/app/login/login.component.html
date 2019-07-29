@@ -1,0 +1,8 @@
+<form #frm="ngForm" (ngSubmit)="validate()" class="text-center border border-light p-5">
+    <p class="h4 mb-4">Login</p>
+    <input type="text" name='userName' [(ngModel)]='user.userName' class="form-control mb-4" placeholder="E-mail"><br>
+    <input type="passWord" name='passWord' [(ngModel)]='user.passWord' class="form-control mb-4" placeholder="Password"><br>
+    <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+    type="submit" [routerLink]="['/home']" >Sign in</button>
+</form>
+<!-- <LoggedInComponent></LoggedInComponent> -->

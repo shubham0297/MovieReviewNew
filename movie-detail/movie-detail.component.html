@@ -1,0 +1,34 @@
+<div>
+
+    <h3>" book."</h3>
+  
+    <p>
+      <strong>ISBN:</strong> " book.isbn "
+    </p>
+    <p>
+      <strong>Rating:</strong> {{rating}}
+    </p>
+    <div>
+        <button className="fa fa-thumbs-o-up" (click)="increaseRating($event)" > Like </button> &nbsp;&nbsp;&nbsp;
+        <button className="fa fa-thumbs-o-down" (click)="decreaseRating($event)"> Dislike</button> 
+    </div>
+  
+    <hr>
+    
+    <!-- <input type="textarea" rows="10" cols="30" /> -->
+    <textarea rows=10 cols=200 placeholder="Write a Review"></textarea>
+    <br>
+    <button  class="btn btn-success " mdbWavesEffect
+    type="submit" >Post</button>
+  
+    <hr>
+    <pre>
+
+
+        
+    </pre>
+    <a class="btn btn-success" routerLink="/home">Back to Dashboard</a>
+  
+  </div>
+  
+  
